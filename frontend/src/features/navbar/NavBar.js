@@ -7,14 +7,10 @@ import { recieveToken } from "../token/tokenSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { receiveNotifications } from "../Notifications/notificationsSlice";
 import "../../css/NavBar.css";
-import { logout, login } from "../../util/firebaseFunctions";
+import { logout } from "../../util/firebaseFunctions";
 import { AuthContext } from "../../providers/AuthContext";
 import logo from "../images/FinalRoadieLogoblk.png";
 import { db } from "../../firebase";
-import { updateUser } from "../token/userTokenSlice";
-import { toggleLoadingState } from "../Loading/loadingSlice";
-import { toggleErrorState, recieveState } from "../Error/errorSlice";
-import $ from "jquery";
 
 const NavBar = () => {
   const { currentUser } = useContext(AuthContext);
@@ -71,9 +67,7 @@ const NavBar = () => {
   }, [notifications.length, artist, client]);
 
   let routeExt = () => {
-    debugger;
     if (client === null && artist) {
-      debugger
       return (
         <>
           <li className="nav-item active">

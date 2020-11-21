@@ -138,7 +138,7 @@ const ClientSignUp = () => {
             aria-describedby="emailHelp"
           />
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <label for="exampleInputPassword1" id="labelItem">
             Password
           </label>
