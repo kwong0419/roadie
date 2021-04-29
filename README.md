@@ -4,7 +4,7 @@
 
 **Roadie** is a web app that allows two different type of users to connect, an artist or a client, allowing them to directly communicate and contact one another to plan events and book gigs together. The purpose of this app is the remove the need of having a middle-man between the two types of users, which often negatively effects the industry when upcoming artists are trying to get their name out there.
 
-Built with React, Redux, Bootstrap, FireBase, Google Cloud Storage, and PostgreSQL
+Built with React, Redux, Bootstrap, FireBase, Google Cloud Storage, Express, and PostgreSQL,
 
 ![Roadie](./docs/images/screen1.png)
 ![Roadie](./docs/images/screen2.png)
